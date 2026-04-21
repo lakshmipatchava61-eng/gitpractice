@@ -1,0 +1,66 @@
+# 1. List directory contents
+ls -l        # long listing with permissions, owner, size, and date
+ls -a        # show hidden files
+ls -lh       # human-readable sizes
+ls -lt       # sort by modification time
+
+# 2. Change directory
+cd /path/to/dir     # go to specific directory
+cd ..               # go up one directory
+cd ~                # go to home directory
+cd -                # go to previous directory
+
+# 3. Print working directory
+pwd                 # show current directory path
+
+# 4. Make directory
+mkdir new_folder           # create directory
+mkdir -p dir1/dir2         # create nested directories
+
+# 5. Remove directory
+rmdir folder_name          # remove empty directory
+
+# 6. Remove files or directories
+rm file.txt               # delete file
+rm -r folder/             # delete folder recursively
+rm -f file.txt            # force delete
+rm -rf folder/            # recursive + force delete
+
+# 7. Copy files or directories
+cp file1.txt file2.txt         # copy file
+cp -r dir1/ dir2/              # copy directory recursively
+
+# 8. Move or rename files/directories
+mv oldname.txt newname.txt     # rename file
+mv file.txt /new/location/     # move file
+
+# 9. Create empty file or update timestamp
+touch file.txt
+
+# 10. Display file content
+cat file.txt                       # view file content
+cat file1 file2 > merged.txt       # combine files into one
+
+# 11. View file page-by-page
+less file.txt
+more file.txt
+
+# 12. View beginning or end of file
+head -n 10 file.txt     # first 10 lines
+tail -n 10 file.txt     # last 10 lines
+tail -f logfile.log     # follow live log updates
+
+# 13. Search for some specific data in a file
+grep string filename
+To search for a word called spool in /etc/passwd file
+grep spool /etc/passwd 
+
+# 14. Change file permissions
+read-4
+write-2
+execute-1
+
+chmod 755 script.sh
+chmod +x script.sh      # add execute permission
+
+
